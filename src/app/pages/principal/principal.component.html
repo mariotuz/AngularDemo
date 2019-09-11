@@ -1,59 +1,181 @@
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <div class="content-header">
-          <div class="container-fluid">
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
             <div class="row mb-2">
-              <div class="col-sm-6">
-                <h1 class="m-0 text-dark">Dashboard v3</h1>
-              </div><!-- /.col -->
-              <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active">Dashboard v3</li>
-                </ol>
-              </div><!-- /.col -->
-            </div><!-- /.row -->
-          </div><!-- /.container-fluid -->
-        </div>
-        <!-- /.content-header -->
-    
-        <!-- Main content -->
-        <div class="content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="card">
-                  <div class="card-header border-0">
-                    <div class="d-flex justify-content-between">
-                      <h3 class="card-title">Individuales</h3>
-                    </div>
-                  </div>
-                  <div class="card-body">
-    
-                    <div class="position-relative mb-4">
-                      <canvas id="sales-chart" height="200"></canvas>
-                    </div>
-    
-                    <div class="d-flex flex-row justify-content-end">
-                      <span class="mr-2">
-                        <i class="fas fa-square text-primary"></i> Enviados
-                      </span>
-    
-                      <span>
-                        <i class="fas fa-square text-gray"></i> Pendientes
-                      </span>
-                    </div>
-                  </div>
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Dashboard v3</h1>
                 </div>
-                <!-- /.card -->
-              </div>
-              <!-- /.col-md-6 -->
+                <!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Dashboard v3</li>
+                    </ol>
+                </div>
+                <!-- /.col -->
             </div>
             <!-- /.row -->
-          </div>
-          <!-- /.container-fluid -->
         </div>
-        <!-- /.content -->
-      </div>
-      <!-- /.content-wrapper -->
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header border-0">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="card-title">Individuales</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="position-relative mb-4">
+                                <canvas id="sales-chart" height="200"></canvas>
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-end">
+                                <span class="mr-2">
+                        <i class="fas fa-square text-primary"></i> Enviados
+                      </span>
+
+                                <span>
+                        <i class="fas fa-square text-gray"></i> Pendientes
+                      </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col-md-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+
+    <div class="row">
+        <div class="col-12">
+            <div class="col-3">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="Alta">
+                    <label class="form-check-label" for="Alta">Alta</label>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="Alta">
+                    <label class="form-check-label" for="Alta">Alta</label>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="Alta">
+                    <label class="form-check-label" for="Alta">Alta</label>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="Alta">
+                    <label class="form-check-label" for="Alta">Alta</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Playa Hotels & Resort</h3>
+
+                    <div class="card-tools">
+                        <div class="input-group input-group-sm" style="width: 150px;">
+                            <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body table-responsive p-0">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">Solicitud: </td>
+                                <td colspan="3">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="Alta">
+                                        <label class="form-check-label" for="Alta">Alta</label>
+                                    </div>
+                                </td>
+                                <td colspan="3">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="Cambio">
+                                        <label class="form-check-label" for="Cambio">Cambio</label>
+                                    </div>
+                                </td>
+                                <td colspan="3">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="Baja">
+                                        <label class="form-check-label" for="Baja">Baja</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>219</td>
+                                <td>Alexander Pierce</td>
+                                <td><span class="badge bg-danger">55%</span></td>
+                                <td><span class="tag tag-warning">Pending</span></td>
+                                <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                            </tr>
+                            <tr>
+                                <td>657</td>
+                                <td>Bob Doe</td>
+                                <td>11-7-2014</td>
+                                <td><span class="tag tag-primary">Approved</span></td>
+                                <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                            </tr>
+                            <tr>
+                                <td>175</td>
+                                <td>Mike Doe</td>
+                                <td>11-7-2014</td>
+                                <td><span class="tag tag-danger">Denied</span></td>
+                                <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+    </div>
+
+</div>
+<!-- /.content-wrapper -->

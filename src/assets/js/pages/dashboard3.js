@@ -18,12 +18,12 @@ $(function () {
         {
           backgroundColor: '#007bff',
           borderColor    : '#007bff',
-          data           : [100, 200, 300, 250, 270, 250, 300]
+          data           : [1000, 2000, 3000, 2500, 2700, 2500, 3000]
         },
         {
           backgroundColor: '#ced4da',
           borderColor    : '#ced4da',
-          data           : [70, 170, 270, 200, 180, 150, 200]
+          data           : [700, 1700, 2700, 2000, 1800, 1500, 2000]
         }
       ]
     },
@@ -58,7 +58,7 @@ $(function () {
                 value /= 1000
                 value += 'k'
               }
-              return '' + value
+              return '$' + value
             }
           }, ticksStyle)
         }],
@@ -90,7 +90,7 @@ $(function () {
       },
         {
           type                : 'line',
-          data                : [0, 80, 70, 67, 80, 0, 100],
+          data                : [60, 80, 70, 67, 80, 77, 100],
           backgroundColor     : 'tansparent',
           borderColor         : '#ced4da',
           pointBorderColor    : '#ced4da',
