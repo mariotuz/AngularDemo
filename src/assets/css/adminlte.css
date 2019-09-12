@@ -24124,3 +24124,16 @@ a.text-muted:hover {
   color: #e6e8ea;
 }
 /*# sourceMappingURL=adminlte.css.map */
+.Ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ItemEmpresa{
+    font-size: 14px;
+    font-weight: bold;
+}
+.table-sistemas .fila:nth-of-type(odd) {
+  background-color: rgba(0,0,0,.05);
+}
+

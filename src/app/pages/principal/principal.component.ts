@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as jsPDF from 'jspdf';
+
 
 @Component({
   selector: 'app-principal',
@@ -8,6 +10,12 @@ import { Component, OnInit } from '@angular/core';
 export class PrincipalComponent implements OnInit {
 
   constructor() { }
+
+  GenerarPDF(){
+    const doc = new jsPDF();
+    doc.fromHTML(document.getElementById('Solicitud'), 10, 10);
+    doc.save('Solicitud');
+  }
 
   ngOnInit() {
   }

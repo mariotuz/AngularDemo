@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div class="content-wrapper" id="Solicitud">
     <section class="content">
         <div class="container-fluid">
             <div class="invoice p-3 mb-3">
@@ -26,7 +26,7 @@
                     <!-- /.col -->
                     <div class="col-sm-3 invoice-col">
                         <div class="icheck-success d-inline">
-                            <input type="radio" name="r3" id="radioSuccess1">
+                            <input type="checkbox" name="r3" id="radioSuccess1">
                             <label for="radioSuccess1">
                             Alta
                         </label>
@@ -35,7 +35,7 @@
                     <!-- /.col -->
                     <div class="col-sm-3 invoice-col">
                         <div class="icheck-primary d-inline">
-                            <input type="radio" name="r3" id="radioSuccess2">
+                            <input type="checkbox" name="r3" id="radioSuccess2">
                             <label for="radioSuccess2">
                             Cambio
                         </label>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="col-sm-3 invoice-col">
                         <div class="icheck-danger d-inline">
-                            <input type="radio" name="r3" id="radioSuccess3">
+                            <input type="checkbox" name="r3" id="radioSuccess3">
                             <label for="radioSuccess3">
                                 Baja
                             </label>
@@ -58,63 +58,42 @@
                 </div>
 
                 <div class="row invoice-info">
-                    <div class="col-sm-6 invoice-col">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <button type="button" class="btn bg-info">Nombre(s)</button>
-                            </div>
-                            <!-- /btn-group -->
-                            <input type="text" class="form-control">
+                        <div class="input-group col-sm-4">
+                                <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Nombre(S)</label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control form-control-sm" id="colFormLabelSm" >
+                                </div>
                         </div>
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-sm-6 invoice-col">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <button type="button" class="btn bg-info">Apellidos</button>
-                            </div>
-                            <!-- /btn-group -->
-                            <input type="text" class="form-control">
+                        <div class="input-group col-sm-4">
+                                <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm Ellipsis">Apellidos</label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control form-control-sm" id="colFormLabelSm" >
+                                </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 invoice-col">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <button type="button" class="btn bg-info"># Coloborador</button>
+                        <div class="input-group col-sm-4">
+                            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm Ellipsis"># Colaborador</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control form-control-sm" id="colFormLabelSm" >
                             </div>
-                            <!-- /btn-group -->
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-sm-6 invoice-col">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <button type="button" class="btn bg-info">Fecha de solicitud</button>
+                        </div> 
+                        <div class="input-group col-sm-4">
+                            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm Ellipsis">Fecha de Solicitud</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control form-control-sm" id="colFormLabelSm" >
                             </div>
-                            <!-- /btn-group -->
-                            <input type="text" class="form-control">
-                        </div>
                     </div>
-                    <div class="col-sm-6 invoice-col">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <button type="button" class="btn bg-info">Departamento</button>
+                    <div class="input-group col-sm-4">
+                            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm Ellipsis">Departamento</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control form-control-sm" id="colFormLabelSm" >
                             </div>
-                            <!-- /btn-group -->
-                            <input type="text" class="form-control">
-                        </div>
                     </div>
-                    <!-- /.col -->
-                    <div class="col-sm-6 invoice-col">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <button type="button" class="btn bg-info">Puesto</button>
-                            </div>
-                            <!-- /btn-group -->
-                            <input type="text" class="form-control">
+                    <div class="input-group col-sm-4">
+                        <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm Ellipsis">Puesto: </label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control form-control-sm" id="colFormLabelSm" >
                         </div>
-                    </div>
+                    </div> 
                 </div>
                 <div class="row invoice-info">
                     <div class="col-sm-3 invoice-col">
@@ -138,88 +117,88 @@
                     </div>
                     <div class="col-sm-3 invoice-col">
                         <div class="row invoice-info">
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">CPMX</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">HPLY</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">HZLC</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">HZVC</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">HZVL</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">HZVP</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">PJKC</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">PJKP</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3 invoice-col">
                         <div class="row invoice-info">
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">HRH</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">HZLJ</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">HZVJ</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">JWD</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">JWG</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">JWP</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">JWR</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">RRS</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3 invoice-col">
                         <div class="row invoice-info">
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">ROM</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">RMF</label>
                             </div>
-                            <div class="col-sm-3 invoice-col">
-                                <input class="form-check-input" type="radio" name="radio1">
+                            <div class="col-sm-3 invoice-col ItemEmpresa">
+                                <input class="form-check-input" type="checkbox" name="radio1">
                                 <label class="form-check-label">STY</label>
                             </div>
 
@@ -229,97 +208,225 @@
                 <div class="col-12 box-body text-center bg-navy">
                     ACCESO A APLICACIONES Y ROLES
                 </div>
-
-                <!-- Table row -->
-                <div class="row">
-                    <div class="col-12 table-responsive">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Qty</th>
-                                    <th>Product</th>
-                                    <th>Serial #</th>
-                                    <th>Description</th>
-                                    <th>Subtotal</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Call of Duty</td>
-                                    <td>455-981-221</td>
-                                    <td>El snort testosterone trophy driving gloves handsome</td>
-                                    <td>$64.50</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Need for Speed IV</td>
-                                    <td>247-925-726</td>
-                                    <td>Wes Anderson umami biodiesel</td>
-                                    <td>$50.00</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Monsters DVD</td>
-                                    <td>735-845-642</td>
-                                    <td>Terry Richardson helvetica tousled street art master</td>
-                                    <td>$10.70</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Grown Ups Blue Ray</td>
-                                    <td>422-568-642</td>
-                                    <td>Tousled lomo letterpress</td>
-                                    <td>$25.99</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="row invoice-info">
+                    <div class="col-sm-3 invoice-col">
+                        <div class="icheck-primary d-inline">
+                            <input type="checkbox" name="r3" id="radioSuccess11">
+                            <label for="radioSuccess11">
+                            Asignacion de Celular
+                        </label>
+                        </div>
                     </div>
-                    <!-- /.col -->
-                </div>
-                <!-- /.row -->
-
-                <div class="row">
-                    <!-- accepted payments column -->
-                    <div class="col-6">
-                        <p class="lead">Payment Methods:</p>
-                        <img src="../../dist/img/credit/visa.png" alt="Visa">
-                        <img src="../../dist/img/credit/mastercard.png" alt="Mastercard">
-                        <img src="../../dist/img/credit/american-express.png" alt="American Express">
-                        <img src="../../dist/img/credit/paypal2.png" alt="Paypal">
-
-                        <p class="text-muted well well-sm shadow-none" style="margin-top: 10px;">
-                            Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
-                        </p>
+                    <div class="col-sm-3 invoice-col">
+                        <div class="icheck-primary d-inline">
+                            <input type="checkbox" name="r3" id="radioSuccess22">
+                            <label for="radioSuccess22">
+                            VPN
+                        </label>
+                        </div>
                     </div>
-                    <!-- /.col -->
-                    <div class="col-6">
-                        <p class="lead">Amount Due 2/22/2014</p>
-
-                        <div class="table-responsive">
-                            <table class="table">
-                                <tr>
-                                    <th style="width:50%">Subtotal:</th>
-                                    <td>$250.30</td>
-                                </tr>
-                                <tr>
-                                    <th>Tax (9.3%)</th>
-                                    <td>$10.34</td>
-                                </tr>
-                                <tr>
-                                    <th>Shipping:</th>
-                                    <td>$5.80</td>
-                                </tr>
-                                <tr>
-                                    <th>Total:</th>
-                                    <td>$265.24</td>
-                                </tr>
-                            </table>
+                    <div class="col-sm-3 invoice-col">
+                        <div class="icheck-primary d-inline">
+                            <input type="checkbox" name="r3" id="radioSuccess33">
+                            <label for="radioSuccess33">
+                            Windows
+                            </label>
                         </div>
                     </div>
                     <!-- /.col -->
                 </div>
-                <!-- /.row -->
+
+                <div class="col-12 box-body text-center bg-navy">
+                        <div class="row invoice-info">
+                                <div class="col-sm-2 invoice-col">
+                                    Sistema
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-8 invoice-col">
+                                    Propiedades
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-2 invoice-col">
+                                    Perfil
+                                </div>
+                            </div>
+                    </div>
+
+                <div class="container table-sistemas">
+                    <div class="row fila">
+                      <div class="col-2 Ellipsis">AbRHil / ISI.Net</div> 
+                      <div class="col-8">
+                            <div class="row invoice-info">
+                                <div class="col-sm-2 invoice-col ItemEmpresa">
+                                    <input class="form-check-input" type="checkbox" name="radio1">
+                                    <label class="form-check-label">HPLY</label>
+                                </div>
+                                <div class="col-sm-2 invoice-col ItemEmpresa">
+                                    <input class="form-check-input" type="checkbox" name="radio1">
+                                    <label class="form-check-label">HZLC</label>
+                                </div>
+                                <div class="col-sm-2 invoice-col ItemEmpresa">
+                                    <input class="form-check-input" type="checkbox" name="radio1">
+                                    <label class="form-check-label">HZVC</label>
+                                </div>
+                                <div class="col-sm-2 invoice-col ItemEmpresa">
+                                    <input class="form-check-input" type="checkbox" name="radio1">
+                                    <label class="form-check-label">HZVP</label>
+                                </div>
+                                <div class="col-sm-2 invoice-col ItemEmpresa">
+                                    <input class="form-check-input" type="checkbox" name="radio1">
+                                    <label class="form-check-label">PJKC</label>
+                                </div>
+                                <div class="col-sm-2 invoice-col ItemEmpresa">
+                                    <input class="form-check-input" type="checkbox" name="radio1">
+                                    <label class="form-check-label">PJKP</label>
+                                </div>
+                                <div class="col-sm-2 invoice-col ItemEmpresa">
+                                    <input class="form-check-input" type="checkbox" name="radio1">
+                                    <label class="form-check-label">HZLV</label>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="col-2">
+                            <div class="input-group mb-12">
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Escoge uno...</option>
+                                    <option value="1">Manager</option>
+                                    <option value="2">DBA</option>
+                                    <option value="3">Admin</option>
+                                </select>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="row fila">
+                            <div class="col-2 Ellipsis">Bitácora de Recepción</div> 
+                            <div class="col-8">
+                                  <div class="row invoice-info">
+                                        <div class="col-sm-2 invoice-col ItemEmpresa">
+                                                <input class="form-check-input" type="checkbox" name="radio1">
+                                                <label class="form-check-label">HPLY</label>
+                                            </div>
+                                            <div class="col-sm-2 invoice-col ItemEmpresa">
+                                                <input class="form-check-input" type="checkbox" name="radio1">
+                                                <label class="form-check-label">HZLC</label>
+                                            </div>
+                                            <div class="col-sm-2 invoice-col ItemEmpresa">
+                                                <input class="form-check-input" type="checkbox" name="radio1">
+                                                <label class="form-check-label">HZVC</label>
+                                            </div>
+                                            <div class="col-sm-2 invoice-col ItemEmpresa">
+                                                <input class="form-check-input" type="checkbox" name="radio1">
+                                                <label class="form-check-label">PJKC</label>
+                                            </div>
+                                            <div class="col-sm-2 invoice-col ItemEmpresa">
+                                                <input class="form-check-input" type="checkbox" name="radio1">
+                                                <label class="form-check-label">PJKP</label>
+                                            </div>
+                                            <div class="col-sm-2 invoice-col ItemEmpresa">
+                                                <input class="form-check-input" type="checkbox" name="radio1">
+                                                <label class="form-check-label">HZLV</label>
+                                            </div>
+                                  </div>
+                            </div>
+                            <div class="col-2">
+                                  <!-- <div class="input-group mb-12">
+                                      <select class="custom-select" id="inputGroupSelect01">
+                                          <option selected>Escoge uno...</option>
+                                          <option value="1">Manager</option>
+                                          <option value="2">DBA</option>
+                                          <option value="3">Admin</option>
+                                      </select>
+                                  </div> -->
+                            </div>
+                    </div>
+                    <div class="row fila">
+                            <div class="col-2 Ellipsis">Book 4 time</div> 
+                            <div class="col-8">
+                                  <div class="row invoice-info">
+                                        <div class="col-sm-2 invoice-col ItemEmpresa">
+                                                <input class="form-check-input" type="checkbox" name="radio1">
+                                                <label class="form-check-label">HPLY</label>
+                                            </div>
+                                            <div class="col-sm-2 invoice-col ItemEmpresa">
+                                                <input class="form-check-input" type="checkbox" name="radio1">
+                                                <label class="form-check-label">HZLC</label>
+                                            </div>
+                                            <div class="col-sm-2 invoice-col ItemEmpresa">
+                                                <input class="form-check-input" type="checkbox" name="radio1">
+                                                <label class="form-check-label">HZVC</label>
+                                            </div>
+                                            <div class="col-sm-2 invoice-col ItemEmpresa">
+                                                <input class="form-check-input" type="checkbox" name="radio1">
+                                                <label class="form-check-label">PJKC</label>
+                                            </div>
+                                            <div class="col-sm-2 invoice-col ItemEmpresa">
+                                                <input class="form-check-input" type="checkbox" name="radio1">
+                                                <label class="form-check-label">PJKP</label>
+                                            </div>
+                                            <div class="col-sm-2 invoice-col ItemEmpresa">
+                                                <input class="form-check-input" type="checkbox" name="radio1">
+                                                <label class="form-check-label">HZLV</label>
+                                            </div>
+                                  </div>
+                            </div>
+                            <div class="col-2">
+                                  <div class="input-group mb-12">
+                                    
+                                      <select class="custom-select" id="inputGroupSelect01">
+                                          <option selected>Escoge uno...</option>
+                                          <option value="1">Manager</option>
+                                          <option value="2">DBA</option>
+                                          <option value="3">Admin</option>
+                                      </select>
+                                  </div>
+                            </div>
+                    </div>
+                    <div class="row fila">
+                            <div class="col-2 Ellipsis">Cargos / PayBack</div> 
+                            <div class="col-8">
+                                  <div class="row invoice-info">
+                                      <div class="col-sm-2 invoice-col ItemEmpresa">
+                                          <input class="form-check-input" type="checkbox" name="radio1">
+                                          <label class="form-check-label">HPLY</label>
+                                      </div>
+                                      <div class="col-sm-2 invoice-col ItemEmpresa">
+                                          <input class="form-check-input" type="checkbox" name="radio1">
+                                          <label class="form-check-label">HZLC</label>
+                                      </div>
+                                      <div class="col-sm-2 invoice-col ItemEmpresa">
+                                          <input class="form-check-input" type="checkbox" name="radio1">
+                                          <label class="form-check-label">HZVC</label>
+                                      </div>
+                                      <div class="col-sm-2 invoice-col ItemEmpresa">
+                                          <input class="form-check-input" type="checkbox" name="radio1">
+                                          <label class="form-check-label">HZVP</label>
+                                      </div>
+                                      <div class="col-sm-2 invoice-col ItemEmpresa">
+                                          <input class="form-check-input" type="checkbox" name="radio1">
+                                          <label class="form-check-label">PJKC</label>
+                                      </div>
+                                      <div class="col-sm-2 invoice-col ItemEmpresa">
+                                          <input class="form-check-input" type="checkbox" name="radio1">
+                                          <label class="form-check-label">PJKP</label>
+                                      </div>
+                                      <div class="col-sm-2 invoice-col ItemEmpresa">
+                                          <input class="form-check-input" type="checkbox" name="radio1">
+                                          <label class="form-check-label">HZLV</label>
+                                      </div>
+                                  </div>
+                            </div>
+                            <div class="col-2">
+                                  <div class="input-group mb-12">
+                                      <select class="custom-select" id="inputGroupSelect01">
+                                          <option selected>Escoge uno...</option>
+                                          <option value="1">Manager</option>
+                                          <option value="2">DBA</option>
+                                          <option value="3">Admin</option>
+                                      </select>
+                                  </div>
+                            </div>
+                    </div>
+                </div>
 
                 <!-- this row will not appear when printing -->
                 <div class="row no-print">
@@ -328,7 +435,7 @@
                         <button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Submit
                     Payment
                     </button>
-                        <button type="button" class="btn bg-info float-right" style="margin-right: 5px;">
+                        <button type="button" class="btn bg-info float-right" style="margin-right: 5px;" (click)="GenerarPDF()">
                     <i class="fas fa-download"></i> Generate PDF
                     </button>
                     </div>
