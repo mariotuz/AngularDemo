@@ -26,7 +26,7 @@
                     <!-- /.col -->
                     <div class="col-sm-3 invoice-col">
                         <div class="icheck-success d-inline">
-                            <input type="checkbox" name="r3" id="radioSuccess1">
+                            <input type="radio" name="r3" id="radioSuccess1">
                             <label for="radioSuccess1">
                             Alta
                         </label>
@@ -35,7 +35,7 @@
                     <!-- /.col -->
                     <div class="col-sm-3 invoice-col">
                         <div class="icheck-primary d-inline">
-                            <input type="checkbox" name="r3" id="radioSuccess2">
+                            <input type="radio" name="r3" id="radioSuccess2">
                             <label for="radioSuccess2">
                             Cambio
                         </label>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="col-sm-3 invoice-col">
                         <div class="icheck-danger d-inline">
-                            <input type="checkbox" name="r3" id="radioSuccess3">
+                            <input type="radio" name="r3" id="radioSuccess3">
                             <label for="radioSuccess3">
                                 Baja
                             </label>
@@ -253,179 +253,36 @@
                     </div>
 
                 <div class="container table-sistemas">
-                    <div class="row fila">
-                      <div class="col-2 Ellipsis">AbRHil / ISI.Net</div> 
-                      <div class="col-8">
-                            <div class="row invoice-info">
-                                <div class="col-sm-2 invoice-col ItemEmpresa">
-                                    <input class="form-check-input" type="checkbox" name="radio1">
-                                    <label class="form-check-label">HPLY</label>
-                                </div>
-                                <div class="col-sm-2 invoice-col ItemEmpresa">
-                                    <input class="form-check-input" type="checkbox" name="radio1">
-                                    <label class="form-check-label">HZLC</label>
-                                </div>
-                                <div class="col-sm-2 invoice-col ItemEmpresa">
-                                    <input class="form-check-input" type="checkbox" name="radio1">
-                                    <label class="form-check-label">HZVC</label>
-                                </div>
-                                <div class="col-sm-2 invoice-col ItemEmpresa">
-                                    <input class="form-check-input" type="checkbox" name="radio1">
-                                    <label class="form-check-label">HZVP</label>
-                                </div>
-                                <div class="col-sm-2 invoice-col ItemEmpresa">
-                                    <input class="form-check-input" type="checkbox" name="radio1">
-                                    <label class="form-check-label">PJKC</label>
-                                </div>
-                                <div class="col-sm-2 invoice-col ItemEmpresa">
-                                    <input class="form-check-input" type="checkbox" name="radio1">
-                                    <label class="form-check-label">PJKP</label>
-                                </div>
-                                <div class="col-sm-2 invoice-col ItemEmpresa">
-                                    <input class="form-check-input" type="checkbox" name="radio1">
-                                    <label class="form-check-label">HZLV</label>
-                                </div>
-                            </div>
-                      </div>
-                      <div class="col-2">
-                            <div class="input-group mb-12">
-                                <select class="custom-select" id="inputGroupSelect01">
-                                    <option selected>Escoge uno...</option>
-                                    <option value="1">Manager</option>
-                                    <option value="2">DBA</option>
-                                    <option value="3">Admin</option>
-                                </select>
-                            </div>
-                      </div>
-                    </div>
-                    <div class="row fila">
-                            <div class="col-2 Ellipsis">Bitácora de Recepción</div> 
-                            <div class="col-8">
-                                  <div class="row invoice-info">
-                                        <div class="col-sm-2 invoice-col ItemEmpresa">
-                                                <input class="form-check-input" type="checkbox" name="radio1">
-                                                <label class="form-check-label">HPLY</label>
-                                            </div>
-                                            <div class="col-sm-2 invoice-col ItemEmpresa">
-                                                <input class="form-check-input" type="checkbox" name="radio1">
-                                                <label class="form-check-label">HZLC</label>
-                                            </div>
-                                            <div class="col-sm-2 invoice-col ItemEmpresa">
-                                                <input class="form-check-input" type="checkbox" name="radio1">
-                                                <label class="form-check-label">HZVC</label>
-                                            </div>
-                                            <div class="col-sm-2 invoice-col ItemEmpresa">
-                                                <input class="form-check-input" type="checkbox" name="radio1">
-                                                <label class="form-check-label">PJKC</label>
-                                            </div>
-                                            <div class="col-sm-2 invoice-col ItemEmpresa">
-                                                <input class="form-check-input" type="checkbox" name="radio1">
-                                                <label class="form-check-label">PJKP</label>
-                                            </div>
-                                            <div class="col-sm-2 invoice-col ItemEmpresa">
-                                                <input class="form-check-input" type="checkbox" name="radio1">
-                                                <label class="form-check-label">HZLV</label>
-                                            </div>
-                                  </div>
-                            </div>
-                            <div class="col-2">
-                                  <!-- <div class="input-group mb-12">
-                                      <select class="custom-select" id="inputGroupSelect01">
-                                          <option selected>Escoge uno...</option>
-                                          <option value="1">Manager</option>
-                                          <option value="2">DBA</option>
-                                          <option value="3">Admin</option>
-                                      </select>
+                    <div *ngFor="let sistema of siste.sistemas; let i=index;" class="row fila">
+                        <div class="col-2 Ellipsis">{{sistema.Sistema}}</div> 
+                        <div class="col-8">
+                              <div class="row invoice-info">
+                                  <!-- <div *ngFor="let propiedad of sistema.Opciones" class="{{sistema.Clase}} invoice-col ItemEmpresa">
+                                      <input class="form-check-input" type="checkbox" name="radio1">
+                                      <label class="form-check-label Ellipsis">{{propiedad.Nombre}}</label>
                                   </div> -->
-                            </div>
-                    </div>
-                    <div class="row fila">
-                            <div class="col-2 Ellipsis">Book 4 time</div> 
-                            <div class="col-8">
-                                  <div class="row invoice-info">
-                                        <div class="col-sm-2 invoice-col ItemEmpresa">
-                                                <input class="form-check-input" type="checkbox" name="radio1">
-                                                <label class="form-check-label">HPLY</label>
-                                            </div>
-                                            <div class="col-sm-2 invoice-col ItemEmpresa">
-                                                <input class="form-check-input" type="checkbox" name="radio1">
-                                                <label class="form-check-label">HZLC</label>
-                                            </div>
-                                            <div class="col-sm-2 invoice-col ItemEmpresa">
-                                                <input class="form-check-input" type="checkbox" name="radio1">
-                                                <label class="form-check-label">HZVC</label>
-                                            </div>
-                                            <div class="col-sm-2 invoice-col ItemEmpresa">
-                                                <input class="form-check-input" type="checkbox" name="radio1">
-                                                <label class="form-check-label">PJKC</label>
-                                            </div>
-                                            <div class="col-sm-2 invoice-col ItemEmpresa">
-                                                <input class="form-check-input" type="checkbox" name="radio1">
-                                                <label class="form-check-label">PJKP</label>
-                                            </div>
-                                            <div class="col-sm-2 invoice-col ItemEmpresa">
-                                                <input class="form-check-input" type="checkbox" name="radio1">
-                                                <label class="form-check-label">HZLV</label>
-                                            </div>
+                                  <div *ngFor="let propiedad of sistema.Opciones;  let j=index;" class="icheck-success d-inline">
+                                    <input type="checkbox" id="checkboxSuccess{{i}}{{j}}">
+                                    <label for="checkboxSuccess{{i}}{{j}}">
+                                            {{propiedad.Nombre}}
+                                    </label>
                                   </div>
-                            </div>
-                            <div class="col-2">
-                                  <div class="input-group mb-12">
-                                    
-                                      <select class="custom-select" id="inputGroupSelect01">
-                                          <option selected>Escoge uno...</option>
-                                          <option value="1">Manager</option>
-                                          <option value="2">DBA</option>
-                                          <option value="3">Admin</option>
-                                      </select>
-                                  </div>
-                            </div>
-                    </div>
-                    <div class="row fila">
-                            <div class="col-2 Ellipsis">Cargos / PayBack</div> 
-                            <div class="col-8">
-                                  <div class="row invoice-info">
-                                      <div class="col-sm-2 invoice-col ItemEmpresa">
-                                          <input class="form-check-input" type="checkbox" name="radio1">
-                                          <label class="form-check-label">HPLY</label>
-                                      </div>
-                                      <div class="col-sm-2 invoice-col ItemEmpresa">
-                                          <input class="form-check-input" type="checkbox" name="radio1">
-                                          <label class="form-check-label">HZLC</label>
-                                      </div>
-                                      <div class="col-sm-2 invoice-col ItemEmpresa">
-                                          <input class="form-check-input" type="checkbox" name="radio1">
-                                          <label class="form-check-label">HZVC</label>
-                                      </div>
-                                      <div class="col-sm-2 invoice-col ItemEmpresa">
-                                          <input class="form-check-input" type="checkbox" name="radio1">
-                                          <label class="form-check-label">HZVP</label>
-                                      </div>
-                                      <div class="col-sm-2 invoice-col ItemEmpresa">
-                                          <input class="form-check-input" type="checkbox" name="radio1">
-                                          <label class="form-check-label">PJKC</label>
-                                      </div>
-                                      <div class="col-sm-2 invoice-col ItemEmpresa">
-                                          <input class="form-check-input" type="checkbox" name="radio1">
-                                          <label class="form-check-label">PJKP</label>
-                                      </div>
-                                      <div class="col-sm-2 invoice-col ItemEmpresa">
-                                          <input class="form-check-input" type="checkbox" name="radio1">
-                                          <label class="form-check-label">HZLV</label>
-                                      </div>
-                                  </div>
-                            </div>
-                            <div class="col-2">
-                                  <div class="input-group mb-12">
-                                      <select class="custom-select" id="inputGroupSelect01">
-                                          <option selected>Escoge uno...</option>
-                                          <option value="1">Manager</option>
-                                          <option value="2">DBA</option>
-                                          <option value="3">Admin</option>
-                                      </select>
-                                  </div>
-                            </div>
-                    </div>
+                              </div>
+                        </div>
+                        <div class="col-2">
+                              <div *ngIf="sistema.Perfil" class="input-group mb-12">
+                                  <select class="custom-select" id="inputGroupSelect01">
+                                      <option selected>Escoge uno...</option>
+                                      <option value="1">Manager</option>
+                                      <option value="2">DBA</option>
+                                      <option value="3">Admin</option>
+                                  </select>
+                              </div>
+                        </div>
+                      </div>
+
+
+
                 </div>
 
                 <!-- this row will not appear when printing -->
