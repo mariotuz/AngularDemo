@@ -9,9 +9,14 @@ import { Injectable } from '@angular/core';
 export class ConfiguracionService {
 
   sistemas = [];
+  zonas = [];
 
   constructor() {
 
+    const CPMX = {
+      Nombre: 'CPMX',
+      Value: 'CPMX'
+    };
     const HPLY = {
       Nombre: 'HPLY',
       Value: 'HPLY'
@@ -203,6 +208,11 @@ export class ConfiguracionService {
     }
     ];
 
+    this.zonas = [{
+                    Mex: [CPMX, HPLY, HZLC, HZVC, HZVL, HZVP, PJKC, PJKP],
+                    Jam: [HRH, HZLJ, HZVJ, JWD, JWG, JWP, JWR, RRS],
+                    Dom: [ROM, RMF, STY]
+                  }];
     this.sistemas = Configuracion;
   }
 }
