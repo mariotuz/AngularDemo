@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as jsPDF from 'jspdf';
 import { ConfiguracionService } from '../../services/configuracion.service';
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -10,8 +11,11 @@ import { ConfiguracionService } from '../../services/configuracion.service';
 })
 export class PrincipalComponent implements OnInit {
 
-  constructor(public siste: ConfiguracionService) { 
-    console.log(siste);
+  constructor(public siste: ConfiguracionService, private route: ActivatedRoute) {
+    this.route.params
+      .subscribe( parametros => {
+        console.log(parametros);
+      });
   }
 
   GenerarPDF() {

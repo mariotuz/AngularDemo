@@ -1,0 +1,9 @@
+.MarginTop10{
+    margin-top: 10%;
+}
+
+/* SVG Animation */
+svg path,
+svg rect{
+  fill: black;
+}

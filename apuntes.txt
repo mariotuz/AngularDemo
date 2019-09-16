@@ -1,0 +1,7 @@
+creaer nueva pagina
+
+ng g c carpeta/nombrePagina --spec=false
+
+crear unuevo servicio
+
+ng g s services/solicitudes --spec=false
