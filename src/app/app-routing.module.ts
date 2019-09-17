@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'newSolicitud', component: PrincipalComponent},
   { path: 'verSolicitud/:Tk', component: PrincipalComponent},
   { path: 'solicitudes', component: SolicitudesComponent},
+  { path: 'solicitudes/:search', component: SolicitudesComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'newSolicitud'},
 ];
 

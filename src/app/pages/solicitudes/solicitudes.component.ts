@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SolicitudesService } from '../../services/solicitudes.service';
+import { Solicitudes } from 'src/app/interfaces/solicitudes';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-solicitudes',
@@ -8,10 +10,13 @@ import { SolicitudesService } from '../../services/solicitudes.service';
 })
 export class SolicitudesComponent implements OnInit {
 
-  jsonSol = [];
-  constructor( public jsonSolicitudes: SolicitudesService) { }
-
-  ngOnInit() {
+  constructor( public jsonSolicitudes: SolicitudesService, private route: ActivatedRoute) {
   }
-
+  ngOnInit() {
+    this.route.params
+      .subscribe( params => {
+        console.log(params.search);
+        this.jsonSolicitudes.getData(params.search);
+      });
+  }
 }

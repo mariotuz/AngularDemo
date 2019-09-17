@@ -9,6 +9,7 @@ import { PrincipalComponent } from './pages/principal/principal.component';
 import { ConfiguracionService } from './services/configuracion.service';
 import { SolicitudesComponent } from './pages/solicitudes/solicitudes.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MenusuperiorComponent } from './shared/menusuperior/menusuperior.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     PrincipalComponent,
-    SolicitudesComponent
+    SolicitudesComponent,
+    MenusuperiorComponent
   ],
   imports: [
     BrowserModule,

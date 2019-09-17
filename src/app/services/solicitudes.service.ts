@@ -11,10 +11,22 @@ export class SolicitudesService {
   cargando = true;
 
   constructor( private http: HttpClient) {
+  }
+
+  getData(search: string) {
+    this.jsonSoli = [];
     this.http.get('assets/data/data-demo-solicitudes.json')
-      .subscribe( (resp: Solicitudes[]) => {
+    .subscribe( (resp: Solicitudes[]) => {
+      if (search &&  search !== '') {
+        resp.forEach( prod => {
+          if ( prod.Solicitante.indexOf( search ) >= 0 ){
+            this.jsonSoli.push( prod );
+          }
+        });
+      } else {
         this.jsonSoli = resp ;
-        this.cargando = false;
-      });
-   }
+      }
+      this.cargando = false;
+    });
+  }
 }
