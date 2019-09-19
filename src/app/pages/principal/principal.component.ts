@@ -11,10 +11,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PrincipalComponent implements OnInit {
 
+  sisCurrent = [];
+
   constructor(public siste: ConfiguracionService, private route: ActivatedRoute) {
+
     this.route.params
       .subscribe( parametros => {
-        console.log(parametros);
+        this.sisCurrent = siste.getData(parametros.Propiedad);
       });
   }
 
